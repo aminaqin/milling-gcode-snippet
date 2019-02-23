@@ -22,7 +22,7 @@
         "url": "https://github.com/syzlmr/milling-gcode-snippet.git"
     },
     "homepage": "https://www.ehosei.com",
-    "icon": "https://github.com/syzlmr/milling-gcode-snippet/blob/master/images/logo.png",
+    "icon": "images/logo.png",
     "contributes": {
         "languages": [
             {
