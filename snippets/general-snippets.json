@@ -1,0 +1,47 @@
+{
+    "O0000": {
+        "prefix": "O",
+        "body": [
+            "O${0:NNNN};"
+        ],
+        "description": "加入程式編號"
+    },
+    "程式開始": {
+        "prefix": "TS",
+        "body": [
+            "O${1:[程式編號]};",
+            "G90 G20 G54 G28 G40 G80;",
+            "T${2:[刀號]} M06;",
+            "G00 X0. Y0.",
+            "G43 Z${3:[安全高度]}. H${4:[刀長補正號]};",
+            "S${5:[轉速]} M03;",
+            "G00 X${6:[下刀X座標]}. Y${7:[下刀Y座標]}.;"
+        ],
+        "description": "程式開始"
+    },
+    "程式結束": {
+        "prefix": "TE",
+        "body": [
+            "G00 Z${1:[安全高度]}. M09;",
+            "G91 G28 Z0. M5;",
+            "M30;"
+        ],
+        "description": "程式結束"
+    },
+    "GOTO": {
+        "prefix": "GOTO",
+        "body": [
+            "GOTO ${0:NNNN};"
+        ],
+        "description": "GOTO 號碼"
+    },
+    "NXXXX": {
+        "prefix": "N",
+        "body": [
+            "N{1:NNNN};",
+            " $0;",
+            "M99;"
+        ],
+        "description": "標註 N 編號"
+    }
+}

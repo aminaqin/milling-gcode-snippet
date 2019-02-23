@@ -1,0 +1,81 @@
+{
+    "name": "milling-gcode-snippet",
+    "displayName": "CNC Milling G-Code Snippet",
+    "description": "CNC Milling G-Code Snippet",
+    "version": "0.1.1",
+    "license": "MIT",
+    "publisher": "EHOSEI",
+    "author": {
+        "name": "Shih Yu Chung",
+        "url": "https://www.ehosei.com"
+    },
+    "engines": {
+        "vscode": "^1.30.2"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets",
+        "Other"
+    ],
+    "icon": "images/logo.png",
+    "contributes": {
+        "languages": [
+            {
+                "id": "gcode",
+                "aliases": [
+                    "gcode",
+                    "GCODE",
+                    "nc",
+                    "syntax",
+                    "highlighter",
+                    "language"
+                ],
+                "extensions": [
+                    ".nc",
+                    ".gcode",
+                    ".tap",
+                    ".cls",
+                    ".apt",
+                    ".mpt",
+                    ".fnc",
+                    ".gc",
+                    ".dnc",
+                    ".cnc",
+                    ".ncf",
+                    ".ncc",
+                    ".maz",
+                    ".hnc",
+                    ".knc",
+                    ".g00"
+                ],
+                "configuration": "./language/gcode-language.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gcode",
+                "scopeName": "source.gcode",
+                "path": "./syntaxes/gcode.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "gcode",
+                "path": "./snippets/gcode-snippets.json"
+            },
+            {
+                "language": "gcode",
+                "path": "./snippets/mcode-snippets.json"
+            },
+            {
+                "language": "gcode",
+                "path": "./snippets/general-snippets.json"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "G-Code",
+            "properties": {}
+        }
+    }
+}
