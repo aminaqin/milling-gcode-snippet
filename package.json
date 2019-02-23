@@ -17,7 +17,7 @@
         "Snippets",
         "Other"
     ],
-    "icon": "images/logo.png",
+    "icon": "https://github.com/syzlmr/milling-gcode-snippet/blob/master/images/logo.png",
     "contributes": {
         "languages": [
             {

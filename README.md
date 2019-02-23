@@ -2,7 +2,7 @@
 
 這一個套件提供CNC銑床G碼快速輸入及各個G碼參數說明等等功能。
 
-![Screenshot](./images/screenshot.png)
+![Screenshot](https://github.com/syzlmr/milling-gcode-snippet/blob/master/images/screenshot.png)
 
 ## 特徵
 
