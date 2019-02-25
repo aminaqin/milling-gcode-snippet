@@ -159,7 +159,7 @@
                     "name": "constant.character.escape.gcode"
                 },
                 {
-                    "match": "([qQrR])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "([qQrRlL])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
                     "name": "support.constant.math.gcode"
                 }
             ]
@@ -168,8 +168,13 @@
             "patterns": [
                 {
                     "match": "[#][0-9]+",
-                    "name": "variable.other.gcode"
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "#([\\[]#?[\\d]*\\.?[\\d]*([\\+\\-]#?[\\d]*\\.?[\\d]*)*[\\]])",
+                    "name": "invalid.gcode"
                 }
+
             ]
         }
     }

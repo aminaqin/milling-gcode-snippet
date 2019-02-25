@@ -25,7 +25,7 @@
         "prefix": "g01-Z直線切削",
         "scope": "gcode",
         "body": [
-            "G01 Z${1:[X軸座標]}.;"
+            "G01 Z${1:[X軸座標]}. F${2:[切削進給]};"
         ],
         "description": [
             "G01",
