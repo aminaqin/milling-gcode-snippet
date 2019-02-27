@@ -2,6 +2,10 @@
 
 所有更新版本歷程會標註於此
 
+## v0.1.9
+
+- 修正M Code Snippet
+
 ## v0.1.8
 
 - 加入M Code Snippet
