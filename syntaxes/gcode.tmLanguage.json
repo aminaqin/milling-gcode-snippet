@@ -51,11 +51,11 @@
         "keywords": {
             "patterns": [
                 {
-                    "match": "[gG][0-9]{1,3}",
+                    "match": "\\b[gG][0-9]{1,3}",
                     "name": "markup.bold.gcode"
                 },
                 {
-                    "match": "[mM][0-9]{1,3}",
+                    "match": "\\b[mM][0-9]{1,3}",
                     "name": "keyword.operator.quantifier.regexp.gcode"
                 },
                 {
@@ -91,11 +91,11 @@
         "speedsfeeds": {
             "patterns": [
                 {
-                    "match": "([sS])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[sS][+-]?\\d*[.]?\\d*",
                     "name": "constant.language.gcode"
                 },
                 {
-                    "match": "([fF])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[fF][+-]?\\d*[.]?\\d*",
                     "name": "constant.language.gcode"
                 }
             ]
@@ -103,15 +103,15 @@
         "prognumbers": {
             "patterns": [
                 {
-                    "match": "[nN][0-9]+",
+                    "match": "\\b[nN][0-9]+",
                     "name": "constant.numeric.gcode"
                 },
                 {
-                    "match": "[oO][0-9]{1,5}",
+                    "match": "\\b[oO][0-9]{1,5}",
                     "name": "string.regexp.gcode"
                 },
                 {
-                    "match": "[pP][0-9]{1,5}",
+                    "match": "\\b[pP][0-9]{1,5}",
                     "name": "string.regexp.gcode"
                 }
             ]
@@ -119,19 +119,19 @@
         "coords": {
             "patterns": [
                 {
-                    "match": "([xX])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[xX][+-]?\\d*[.]?\\d*",
                     "name": "string.gcode"
                 },
                 {
-                    "match": "([yY])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[yY][+-]?\\d*[.]?\\d*",
                     "name": "string.gcode"
                 },
                 {
-                    "match": "([zZ])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[zZ][+-]?\\d*[.]?\\d*",
                     "name": "invalid.gcode"
                 },
                 {
-                    "match": "([aAbBcC])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[aAbBcC][+-]?\\d*[.]?\\d*",
                     "name": "constant.character.escape.gcode"
                 }
             ]
@@ -139,15 +139,15 @@
         "tools": {
             "patterns": [
                 {
-                    "match": "([dD])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[dD][+-]?\\d*[.]?\\d*",
                     "name": "constant.character.gcode"
                 },
                 {
-                    "match": "([hH])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[hH][+-]?\\d*[.]?\\d*",
                     "name": "constant.character.gcode"
                 },
                 {
-                    "match": "([tT])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[tT][+-]?\\d*[.]?\\d*",
                     "name": "constant.character.gcode"
                 }
             ]
@@ -155,11 +155,11 @@
         "modifiers": {
             "patterns": [
                 {
-                    "match": "([iIjJkK])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[iIjJkK][+-]?\\d*[.]?\\d*",
                     "name": "constant.character.escape.gcode"
                 },
                 {
-                    "match": "([qQrRlL])(?=-|\\d|\\[|#)-?(?:\\d+(?:\\.\\d*)?)?",
+                    "match": "\\b[qQrRlL][+-]?\\d*[.]?\\d*",
                     "name": "support.constant.math.gcode"
                 }
             ]
