@@ -3,7 +3,7 @@
     "name": "CNC Milling G-Code Snippet",
     "patterns": [
         {
-            "include": "#comments"
+            "include": "#warnning"
         },
         {
             "include": "#speedsfeeds"
@@ -31,20 +31,11 @@
         }
     ],
     "repository": {
-        "comments": {
+        "warnning": {
             "patterns": [
                 {
-                    "name": "comment.gcode",
-                    "match": "(\\(.+\\))"
-                },
-                {
-                    "name": "comment.gcode",
-                    "begin": ";",
-                    "end": "\\n"
-                },
-                {
-                    "begin": "[\\/].*",
-                    "end": "\\n"
+                    "name": "invalid.gcode",
+                    "match": "G00"
                 }
             ]
         },
@@ -92,24 +83,16 @@
             "patterns": [
                 {
                     "match": "\\b[sS][+-]?\\d*[.]?\\d*",
-                    "name": "constant.language.gcode"
+                    "name": "invalid.gcode"
                 },
                 {
                     "match": "\\b[fF][+-]?\\d*[.]?\\d*",
-                    "name": "constant.language.gcode"
+                    "name": "invalid.gcode"
                 }
             ]
         },
         "prognumbers": {
             "patterns": [
-                {
-                    "match": "\\b[nN][0-9]+",
-                    "name": "constant.numeric.gcode"
-                },
-                {
-                    "match": "\\b[oO][0-9]{1,5}",
-                    "name": "string.regexp.gcode"
-                },
                 {
                     "match": "\\b[pP][0-9]{1,5}",
                     "name": "string.regexp.gcode"
@@ -140,15 +123,15 @@
             "patterns": [
                 {
                     "match": "\\b[dD][+-]?\\d*[.]?\\d*",
-                    "name": "constant.character.gcode"
+                    "name": "invalid.gcode"
                 },
                 {
                     "match": "\\b[hH][+-]?\\d*[.]?\\d*",
-                    "name": "constant.character.gcode"
+                    "name": "invalid.gcode"
                 },
                 {
                     "match": "\\b[tT][+-]?\\d*[.]?\\d*",
-                    "name": "constant.character.gcode"
+                    "name": "invalid.gcode"
                 }
             ]
         },
