@@ -51,7 +51,8 @@
                     ".maz",
                     ".hnc",
                     ".knc",
-                    ".g00"
+                    ".g00",
+                    ".eia"
                 ],
                 "configuration": "./language/gcode-language.json"
             }
