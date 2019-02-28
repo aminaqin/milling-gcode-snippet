@@ -1,20 +1,21 @@
 # CNC G碼快速輸入 
 
 這一個套件提供CNC銑床G碼快速輸入及各個G碼參數說明等等功能。
-[中文影片範例](https://www.ehosei.com/gcode-quick-editing)，說明程式簡寫及高亮等設定方式。
+[中文影片範例](https://www.ehosei.com/gcode-quick-editing)說明程式簡寫及高亮等設定方式。  
+
 ![Screenshot](https://raw.githubusercontent.com/syzlmr/milling-gcode-snippet/master/images/gcode.gif)
 
 ## 特徵
 
 這一個套件提供CNC銑床G碼快速輸入及各個G碼參數說明功能。
 
-## 安裝
-
-由套件市集裡下載安裝。
-
 ## 使用方式
 
 安裝並啟動此套件. 當您在視窗右下方設定語言為 `gcode` 或儲存檔案名稱為 `.nc` 相關檔案時將驅動此套件。中文說明先按 `g` 即可出現輔助精靈。
+
+## 安裝
+
+由套件市集裡下載安裝。
 
 ## TODO
 
