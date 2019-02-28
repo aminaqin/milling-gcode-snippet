@@ -1,7 +1,7 @@
 # CNC G碼快速輸入 
 
 這一個套件提供CNC銑床G碼快速輸入及各個G碼參數說明等等功能。
-
+[中文影片範例](https://www.ehosei.com/gcode-quick-editing)，說明程式簡寫及高亮等設定方式。
 ![Screenshot](https://raw.githubusercontent.com/syzlmr/milling-gcode-snippet/master/images/gcode.gif)
 
 ## 特徵
