@@ -1,8 +1,8 @@
 {
     "name": "milling-gcode-snippet",
-    "displayName": "CNC Milling G-Code Snippet(繁體中文)",
+    "displayName": "CNC Milling G-Code Snippet(銑床繁體中文)",
     "description": "CNC Snippet",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "license": "MIT",
     "publisher": "ehosei",
     "author": {
