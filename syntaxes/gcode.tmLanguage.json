@@ -34,7 +34,7 @@
         "warnning": {
             "patterns": [
                 {
-                    "name": "invalid.gcode",
+                    "name": "keyword.control.gcode",
                     "match": "(G00)|(G54)|(G55)|(G56)|(G57)|(G58)|(G59)"
                 }
             ]
@@ -47,7 +47,7 @@
                 },
                 {
                     "match": "\\b[mM][0-9]{1,3}",
-                    "name": "keyword.operator.quantifier.regexp.gcode"
+                    "name": "support.constant.math.gcode"
                 },
                 {
                     "match": "([\\%])",
@@ -55,7 +55,7 @@
                 },
                 {
                     "match": "(GOTO)|(IF)|(EQ)|(NE)|(LT)|(GT)|(LE)|(GE)|(DO)|(WHILE)|(END)|(AND)|(OR)|(XOR)",
-                    "name": "keyword.control.gcode"
+                    "name": "support.constant.math.gcode"
                 }
             ]
         },
@@ -75,19 +75,19 @@
                 },
                 {
                     "match": "(\\-)",
-                    "name": "invalid.gcode"
+                    "name": "keyword.control.gcode"
                 }
             ]
         },
         "speedsfeeds": {
             "patterns": [
                 {
-                    "match": "\\b[sS][+-]?\\d*[.]?\\d*",
-                    "name": "invalid.gcode"
+                    "match": "\\b[sS][+-]?\\d+[.]?\\d*",
+                    "name": "keyword.control.gcode"
                 },
                 {
-                    "match": "\\b[fF][+-]?\\d*[.]?\\d*",
-                    "name": "invalid.gcode"
+                    "match": "\\b[fF][+-]?\\d+[.]?\\d*",
+                    "name": "keyword.control.gcode"
                 }
             ]
         },
@@ -102,47 +102,67 @@
         "coords": {
             "patterns": [
                 {
-                    "match": "\\b[xX][+-]?\\d*[.]?\\d*",
+                    "match": "\\b[xX][+-]?\\d+[.]\\d*",
                     "name": "string.gcode"
                 },
                 {
-                    "match": "\\b[yY][+-]?\\d*[.]?\\d*",
-                    "name": "string.gcode"
-                },
-                {
-                    "match": "\\b[zZ][+-]?\\d*[.]?\\d*",
+                    "match": "\\b[xX][+-]?\\d+",
                     "name": "invalid.gcode"
                 },
                 {
-                    "match": "\\b[aAbBcC][+-]?\\d*[.]?\\d*",
+                    "match": "\\b[yY][+-]?\\d+[.]\\d*",
+                    "name": "string.gcode"
+                },
+                {
+                    "match": "\\b[yY][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[zZ][+-]?\\d+[.]\\d*",
+                    "name": "keyword.control.gcode"
+                },
+                {
+                    "match": "\\b[zZ][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[aAbBcCuUvVwW][+-]?\\d+[.]\\d*",
                     "name": "constant.character.escape.gcode"
+                },
+                {
+                    "match": "\\b[aAbBcCuUvVwW][+-]?\\d+",
+                    "name": "invalid.gcode"
                 }
             ]
         },
         "tools": {
             "patterns": [
                 {
-                    "match": "\\b[dD][+-]?\\d*[.]?\\d*",
-                    "name": "invalid.gcode"
+                    "match": "\\b[dD]\\d+",
+                    "name": "keyword.control.gcode"
                 },
                 {
-                    "match": "\\b[hH][+-]?\\d*[.]?\\d*",
-                    "name": "invalid.gcode"
+                    "match": "\\b[hH]\\d+",
+                    "name": "keyword.control.gcode"
                 },
                 {
-                    "match": "\\b[tT][+-]?\\d*[.]?\\d*",
-                    "name": "invalid.gcode"
+                    "match": "\\b[tT]\\d+",
+                    "name": "keyword.control.gcode"
                 }
             ]
         },
         "modifiers": {
             "patterns": [
                 {
-                    "match": "\\b[iIjJkK][+-]?\\d*[.]?\\d*",
+                    "match": "\\b[iIjJkK][+-]?\\d+[.]\\d*",
                     "name": "constant.character.escape.gcode"
                 },
                 {
-                    "match": "\\b[qQrRlL][+-]?\\d*[.]?\\d*",
+                    "match": "\\b[iIjJkK][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[qQrRlL][+-]?\\d+[.]?\\d*",
                     "name": "support.constant.math.gcode"
                 }
             ]
@@ -151,11 +171,11 @@
             "patterns": [
                 {
                     "match": "[#][0-9]+",
-                    "name": "invalid.gcode"
+                    "name": "keyword.control.gcode"
                 },
                 {
-                    "match": "#([\\[]#?[\\d]*\\.?[\\d]*([\\+\\-]#?[\\d]*\\.?[\\d]*)*[\\]])",
-                    "name": "invalid.gcode"
+                    "match": "#[\\[]#?\\d+\\.?\\d*([+-]#?\\d*\\.?\\d*)*[\\]]",
+                    "name": "keyword.control.gcode"
                 }
 
             ]
