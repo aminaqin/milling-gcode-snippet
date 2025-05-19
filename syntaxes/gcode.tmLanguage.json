@@ -1,7 +1,8 @@
 {
-    "scopeName": "source.gcode",
-    "name": "CNC Milling G-Code Snippet",
-    "patterns": [
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "G-code",
+	"scopeName": "source.ruby",
+	"patterns": [
         {
             "include": "#warnning"
         },
@@ -181,5 +182,4 @@
             ]
         }
     }
-
 }
